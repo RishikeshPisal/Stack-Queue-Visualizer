@@ -1,0 +1,28 @@
+
+.stack{
+  display:flex;
+  flex-direction: column;
+  background-color: #1F2937;
+  gap:0.5rem;
+  padding-bottom: 5px;
+  width: 100%;
+  justify-content: flex-end;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+#stack-container{
+  border-bottom-left-radius: 13px;
+  border-bottom-right-radius: 13px;
+}
+.stack .list-item:first-child{
+  background-color: #10B981;
+  margin-top:10px;
+
+}
+.stack .list-item:first-child::before{
+  content: "Top\2794";
+}
+#stack-container::-webkit-scrollbar{
+  display:none;
+}

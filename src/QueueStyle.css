@@ -1,0 +1,28 @@
+.queue{
+  display:flex;
+  flex-direction: column;
+  background-color: #1F2937;
+  gap:0.5rem;
+  padding-bottom: 5px;
+  width: 100%;
+}
+.queue-container{
+  justify-content: flex;
+}
+
+.queue .list-item:first-child{
+  background-color: #10B981;
+}
+.queue .list-item:last-child{
+  background-color: rgb(209, 64, 64);
+}
+.queue .list-item:first-child::before{
+  content: "Back\2794";
+  
+}
+.queue .list-item:last-child::before{
+  content: "Front\2794";
+}
+#queue-container::-webkit-scrollbar{
+  display:none;
+}

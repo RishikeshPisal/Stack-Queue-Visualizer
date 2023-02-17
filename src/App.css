@@ -1,0 +1,126 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;;
+}
+
+body{
+  min-width: 400px;
+}
+
+.App {
+  background-color: #D1D4F4;
+  box-sizing: border-box;
+  display:flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap:1rem;
+  padding:2rem;
+  width:100vw;
+  height: 100vh;
+  border: 1px solid black;
+}
+
+
+.visuals {
+  background-color: #10B981;
+  display: flex;
+  flex-direction: column;
+  gap:2rem;
+  align-items: center;
+  justify-content: center;
+  width:450px;
+  height: 100%;
+  box-shadow: 0 0 15px black;
+  border-radius: 30px;
+}
+
+.container{
+  background-color: #1F2937;
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 40%;
+  width: 30%;
+  border: 1px solid black;
+  border-top:none;
+  box-shadow: 0px 0px 20px black;
+  overflow:scroll;
+}
+.list-item{
+  background-color: #D1D4F4;
+  box-sizing: border-box;
+  padding:0 10px 0  ;
+  text-align: center;
+  line-height: 250%;
+  height: 40px;
+  width:90%;
+  border-radius: 10px;
+  overflow-x: scroll;
+  align-self:center;
+  
+}
+
+
+
+.controls {
+  width: 30%;
+  box-sizing:border-box;
+  font-size: 1.5rem;
+  display: block;
+}
+
+input{
+  box-sizing: border-box;
+  background-color: #D1D4F4;
+  display: block;
+  font-size:inherit;
+  padding:5px;
+  margin: 0 0 10px;
+  width: 100%;
+  border-radius: 10px;
+  outline:none;
+  border:none;
+  box-shadow: 0 0 10px black;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  display: none;
+}
+button{
+  display:block;
+  font-size:inherit;
+  background-color:#1F2937;
+  color:#D1D4F4;
+  width: 5rem;
+  padding: 5px;
+  margin-top: 5px;
+  border-radius: 7px;
+  box-shadow: 0 0 10px black;
+}
+
+
+.list-item::-webkit-scrollbar{
+  display:none;
+}
+@media screen and (width <= 850px) {
+  .App{
+    height: 160vh;
+    flex-direction: column;
+  }
+  .visuals{
+    width: 350px;
+    height: 80vh;
+
+  }
+}
+@media screen and (width <= 400px){
+  .App{
+    width: 100%;
+
+  }
+  .visuals{
+    width: 100%;
+
+  }
+}
